@@ -52,7 +52,10 @@ class Calendar extends Component {
   };
   render() {
     return (
-      <div style={{ backgroundColor: "purple" }}>
+      <div style={{ backgroundColor: "rgb(80, 51, 150)" }}>
+        <span style={{ color: "white", fontSize: "20pt", fontWeight: "bold" }}>
+          {this.state.date.toLocaleString().substring(6, 7) + "월"}
+        </span>
         <Weekly
           date={this.state.date}
           info={this.state.week}

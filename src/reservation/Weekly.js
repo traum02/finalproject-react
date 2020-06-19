@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 
 class Weekly extends Component {
+  state = {
+    active: false,
+  };
+
   onPressArrowLeft = (e) => {
     e.preventDefault();
     this.props.onLeft();
@@ -10,10 +14,26 @@ class Weekly extends Component {
     this.props.onRight();
   };
   list = (e) => {
-    let val = e.target.tabIndex;
+    let val = e.currentTarget.getAttribute("val");
     console.log(val + "vals");
     this.props.list(val);
+    this.toggle.bind(this);
   };
+  toggle(e) {
+    this.setState({ active: !this.state.active });
+    for (
+      let index = 0;
+      index < document.querySelector(".weekly").parentElement.childElementCount;
+      index++
+    ) {
+      document
+        .querySelector(".weekly")
+        .parentNode.children.item(index).style.backgroundColor = "white";
+    }
+    document.querySelector(".weekly").parentElement.style.backgroundColor = "";
+    e.currentTarget.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
+    this.list(e);
+  }
   render() {
     const e = [];
     for (let i = 0; i < this.props.info.length; i++) {
@@ -48,9 +68,10 @@ class Weekly extends Component {
       // let list = week + " " + date;
       e.push(
         <div
+          className="weekly"
           onClick={this.list.bind(this)}
           key={i}
-          tabIndex={val}
+          val={val}
           style={{
             display: "inline-block",
             border: "1px solid gray",
@@ -64,11 +85,13 @@ class Weekly extends Component {
             margin: "10px",
             outline: "none",
             cursor: "pointer",
-            backgroundColor: "lightyellow",
+            backgroundColor: "white",
           }}
+          onClick={this.toggle.bind(this)}
         >
           <div tabIndex={val} style={{ outline: "none", marginTop: "10px" }}>
             {week}
+            {this.state.active}
           </div>
           <div tabIndex={val} style={{ fontSize: "20pt", outline: "none" }}>
             {date}
@@ -85,7 +108,7 @@ class Weekly extends Component {
           >
             --
           </div>
-          {e}
+          <div style={{ display: "inline-block" }}>{e}</div>
           <div
             onClick={this.onPressArrowRight.bind(this)}
             style={{ display: "inline-block" }}

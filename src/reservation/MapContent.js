@@ -2,10 +2,10 @@ import React, { Component } from "react";
 const { kakao } = window;
 
 class MapContent extends Component {
-  componentDidMount() {
+  componentDidUpdate() {
+    let lat = this.props.dData.place_lat;
+    let lng = this.props.dData.place_lng;
     let container = document.getElementById("map");
-    let lat = 35.157588;
-    let lng = 129.058822;
     let options = {
       center: new kakao.maps.LatLng(lat, lng),
       level: 4,
@@ -25,7 +25,11 @@ class MapContent extends Component {
   }
 
   render() {
-    return <div id="map" style={{ width: "100%", height: "500px" }}></div>;
+    return (
+      <div id="map" style={{ width: "100%", height: "500px" }}>
+        {this.props.dData.place_lat}
+      </div>
+    );
   }
 }
 

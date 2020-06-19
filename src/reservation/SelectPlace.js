@@ -25,40 +25,32 @@ class SelectPlace extends Component {
       placeDatas: [],
       time: [],
       searchPlace: "",
-      selectType: this.props.location.state.selectType,
+      selectType: this.props.match.params.type,
       placeName: "",
       selectDate: today,
+      pageNum: 3,
     };
   }
+
   list = (e) => {
     const type = this.state.selectType;
     const searchPlace = this.refs.searchPlace.value;
     const placeAddr = this.state.placeName;
-    const tmp = new Date().toLocaleDateString();
-    let l = tmp.split(".");
-    let today = "";
-    for (let j = 0; j < 3; j++) {
-      l[j] = l[j].replace(/ /gi, "");
-    }
-    for (let j = 0; j < 3; j++) {
-      if (l[j].length === 1) {
-        today += "0";
-      }
-      today += l[j];
-    }
-    // console.log(type + "type");
     console.log(e + "eee");
     this.setState({
       selectDate: e === undefined ? this.state.selectDate : e,
     });
     let url =
+      // "http://192.168.0.108:9000/matchplay/placelist" +
       "http://localhost:9000/matchplay/placelist" +
       "?type=" +
       type +
       "&place_name=" +
       searchPlace +
       "&place_addr=" +
-      placeAddr;
+      placeAddr +
+      "&pageNum=" +
+      this.state.pageNum;
     axios
       .get(url)
       .then((responseData) => {
@@ -77,15 +69,11 @@ class SelectPlace extends Component {
     let type = e.type;
     let date = e.date;
     console.log(date + "type123");
+    // const url =
+    //   "http://192.168.0.108:9000/matchplay/placelist/gettime?place_id=";
+    const url = "http://localhost:9000/matchplay/placelist/gettime?place_id=";
     axios
-      .get(
-        "http://localhost:9000/matchplay/placelist/gettime?place_id=" +
-          id +
-          "&res_type=" +
-          type +
-          "&res_time=" +
-          date
-      )
+      .get(url + id + "&res_type=" + type + "&res_time=" + date)
       .then((res) => {
         this.setState({
           time: res.data,
@@ -118,7 +106,6 @@ class SelectPlace extends Component {
       },
       () => this.list()
     );
-
     // e.preventDefault();
   };
 
@@ -127,19 +114,39 @@ class SelectPlace extends Component {
     this.refs.searchPlace.value = "";
     e.preventDefault();
   };
-
+  toTop = () => {
+    window.scroll(0, 0);
+  };
   componentDidMount() {
     const li = document.getElementsByTagName("li");
     for (var i = 0; i < li.length; i++) {
       li[i].addEventListener("click", this.onClick.bind(this));
     }
     this.list();
-  }
+    document.addEventListener("scroll", () => {
+      let tmp = window.innerHeight + window.pageYOffset;
+      if (tmp == document.body.scrollHeight) {
+        this.setState(
+          {
+            pageNum: this.state.pageNum + 1,
+          },
+          () => this.list()
+        );
+      }
 
+      // console.log(window.innerHeight, window.pageYOffset);
+      // console.log(
+      //   window.innerHeight + window.pageYOffset >= document.body.offsetHeight
+      // );
+    });
+  }
+  componentWillUnmount() {
+    document.removeEventListener("click", this.onClick.bind(this));
+  }
   render() {
     const arraySelect = [];
     const gu =
-      "강남구,강동구,강북구,강서구,관악구,광진구,구로구,금천구,노원구,도봉구,동대문구,동작구,마포구,서대문구,서초구,성동구,성북구,송파구,양천구,영등포구,용산구,은평구,종로구,중구,중랑구";
+      "서울시 전체,강남구,강동구,강북구,강서구,관악구,광진구,구로구,금천구,노원구,도봉구,동대문구,동작구,마포구,서대문구,서초구,성동구,성북구,송파구,양천구,영등포구,용산구,은평구,종로구,중구,중랑구";
     const arrayGu = gu.split(",");
     for (let i = 0; i < arrayGu.length; i++) {
       arraySelect.push(
@@ -236,16 +243,22 @@ class SelectPlace extends Component {
         {this.state.selectDate !== undefined
           ? "선택일" + this.state.selectDate
           : ""}
-        {this.state.placeDatas.map((row, idx) => (
-          <PlaceItem
-            row={row}
-            idx={idx}
-            key={idx}
-            placeName={this.state.placeName}
-            type={this.state.selectType}
-            date={this.state.selectDate}
-          />
-        ))}
+        <div>
+          {this.state.placeDatas.map((row, idx) => (
+            <PlaceItem
+              row={row}
+              idx={idx}
+              key={idx}
+              placeName={this.state.placeName}
+              type={this.state.selectType}
+              date={this.state.selectDate}
+            />
+          ))}
+          <button onClick={this.toTop.bind(this)}>맨 위로</button>
+        </div>
+        <div
+          style={{ height: "100px", backgroundColor: "rgba(80, 51, 150, 0.3)" }}
+        ></div>
       </div>
     );
   }
