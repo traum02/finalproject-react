@@ -1,0 +1,119 @@
+*{
+  font-family: NanumBarunGothic;
+}
+
+.logo {
+  width: 130px;
+
+  margin-bottom: 30px;
+}
+
+.emogi {
+  width: 45px;
+}
+
+.roleguide {
+  text-align: center;
+}
+
+.leaguePlan {
+  /* border: 1px solid gray; */
+  height: 50%;
+  width: 21%;
+  /* margin-left: 12%; */
+  margin-right: 2%;
+  /* display: inline-block; */
+  position: absolute;
+  top: 60.25%;
+  left: 14%;
+
+  /* margin-top: -26%; */
+}
+.leagueRanking {
+  /* border: 1px solid gray; */
+  /* display: inline-block; */
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  top: 55%;
+  left: 35%;
+  /* margin-left: 35%; */
+  /* margin-top: -10%; */
+  margin-bottom: -100px;
+  /* padding: 0px; */
+}
+
+.schedule {
+  text-align: center;
+  border: 1px solid rgb(224, 224, 224);
+}
+
+.refund {
+  margin-top: 10px;
+  text-align: center;
+  border: 1px solid rgb(224, 224, 224);
+}
+
+.leagueagree {
+  margin-top: 10px;
+  text-align: center;
+  border: 1px solid rgb(224, 224, 224);
+  font-size: 15px;
+}
+
+.agbtn {
+  margin-top: 10px;
+  border: none;
+  background-color: #503396;
+  color: white;
+  border-radius: 5px;
+  width: 80px;
+  height: 25px;
+}
+
+.information {
+  border: 1px solid #503396;
+  margin-left: 20%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  width: 60%;
+  height: 235px;
+}
+
+.leaguejoin {
+  border: none;
+  background-color: #503396;
+  color: white;
+  font-size: 11pt;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  margin-top: -50px;
+}
+
+div.leagueText {
+  padding: 10px;
+}
+
+div.leagueNotice {
+  color: #503396;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+table.rankingTable {
+  text-align: center;
+  margin: 0px;
+  width: 95%;
+}
+
+table.rankingTable th {
+  height: 50px;
+  line-height: 50px;
+  background-color: #503396;
+  color: white;
+}
+table.rankingTable tbody tr {
+  height: 45px;
+  border-bottom: rgba(80, 51, 150, 0.5) 0.5px solid;
+}

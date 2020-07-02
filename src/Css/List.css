@@ -1,0 +1,164 @@
+
+
+.qnatable{
+    font-family: NanumBarunGothic;
+    position: absolute;
+    top:210px;
+    left: 10px;
+    width:1200px;
+    margin-top: 1%;
+    margin-left: 500px;
+    border: 1px solid gray;
+    /* margin-left: 10%; */
+}
+
+.qnatable td{
+    font-family: NanumBarunGothic;
+    border: 1px solid gray;
+    height: 45px;
+    font-size: 13pt;
+    /* margin-left: 10%; */
+}
+
+.qnatable th{
+    font-family: NanumBarunGothic;
+    border: 1px solid gray;
+    height: 60px;
+    /* margin-left: 10%; */
+}
+
+.lock{
+    width:12px;
+}
+
+.cstitle{
+    margin-left:28%;
+    font-size: 50px;
+    color:#503396;
+}
+
+.head{
+    /* width: 20px; */
+    height: 10px;
+    font-size: 13pt;
+    border-bottom: 3px double gray;
+    background-color: #503396;
+    color: white;
+}
+
+.body{
+    height: 10px;
+    font-size: 10pt;
+}
+
+.page-link{
+    border:none;
+    color:black;
+}
+
+.page-link:hover{
+    color:#503396;
+}
+
+
+
+.btnmun2{
+    background-color: #503396;
+    border-color: #ffffff;
+    color: white;
+    font-size: 13pt;
+    position: absolute;
+    top:600px;
+    left: 70px;
+
+
+}
+
+.btnsearch{
+    border:none;
+}
+
+.icon{
+    background:"#00ff0000";
+    border:none;
+    width:37px;
+    
+}
+
+
+.search{
+    border:none;
+    background-color: white;
+}
+
+.cc{
+    font-size: 20pt;
+}
+
+.notice{
+    background-color: rgba(215,204,238,0.5);
+}
+
+.cscenter{
+    margin-top: -1px;
+    width:300px;
+    height:684px;
+    text-align:center;
+    border:1px solid #503396;
+}
+
+.cscenter1{
+    padding-top: 200px;
+}
+
+.holiday{
+    color:Red;
+    font-size: 15pt;
+}
+
+/* .pagination{
+    margin-left:30%;
+    
+} */
+
+/* .board_search{
+    position: absolute;
+    top:800px;
+    left: 1050px;
+    border: 1px solid black;
+} */
+
+.paging{
+    position: absolute;
+    top:750px;
+    left: 1100px;
+}
+
+.select_T{
+    position: absolute;
+    top:830px;
+    left: 900px;
+    font-size: 13pt;
+    height: 30px;
+}
+
+.select_I{
+    position: absolute;
+    top:830px;
+    left: 1020px;
+    font-size: 13pt;
+    height: 30px;
+}
+
+.select_B{
+    position: absolute;
+    top:830px;
+    left: 1230px;
+    font-size: 13pt;
+    height: 30px;
+    background-color: #503396;
+    border-color: #ffffff;
+    color: white;
+    font-size: 13pt;
+    width: 100px;
+}

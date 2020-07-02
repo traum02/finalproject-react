@@ -1,0 +1,18 @@
+.fc-view {
+  z-index: 0;
+}
+
+.fc-content {
+  height: 20px;
+}
+
+.fc-title {
+  font-size: 10pt;
+  color: white;
+}
+.fc-event-title {
+  text-align: center;
+}
+.fc-content {
+  text-align: center;
+}

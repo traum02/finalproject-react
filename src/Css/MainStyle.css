@@ -1,0 +1,459 @@
+* {
+  font-family: NanumBarunGothic;
+}
+
+.ResTable td {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* ********************************************************* */
+
+.CreatTable .Input1 {
+  margin-left: 150px;
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  display: block;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  height: 50px;
+  width: 500px;
+  padding: 10px 12px;
+  opacity: 1 !important;
+  font-size: 15pt;
+  box-sizing: border-box;
+  transition: border-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-color: #ced4da;
+  background-color: #fff;
+}
+
+.CreatTable .Input2 {
+  margin-left: 150px;
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  display: block;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  /* height: 150px; */
+  width: 500px;
+  padding: 10px 12px;
+  opacity: 1 !important;
+  font-size: 15pt;
+  box-sizing: border-box;
+  transition: border-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-color: #ced4da;
+  background-color: #fff;
+}
+
+/* .CreatTable td{
+    text-align: center;
+} */
+
+.GaipList td {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 13pt;
+}
+
+/* ********************************************************* */
+
+.point_tb td {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 15pt;
+}
+
+/* ********************************************************* */
+
+.MyMatch td {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.MyMatch tr {
+  height: 40px;
+}
+
+/* ********************************************************* */
+
+b,
+strong {
+  margin-left: 0;
+}
+/* ********************************************************* */
+
+.Record b {
+  font-size: 15pt;
+}
+
+.Record td {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100px;
+  height: 35px;
+}
+
+/* ********************************************************* */
+
+.MemberList td {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 13pt;
+}
+
+/* .TemaMenu tr{
+    border-bottom: 1px solid white;
+    border-radius: 10px;
+} */
+
+/* .TemaMenu td{
+    text-shadow: 5px 5px 5px black;
+    color: white;
+} */
+
+/* ********************************************************* */
+
+.THomeMain tr td {
+  border: 1px solid white;
+  margin-left: 0;
+}
+
+.THomeMain b {
+  margin-left: 0;
+  font-size: 13pt;
+}
+
+.modal1 {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(255, 255, 100, 100);
+  opacity: 10%;
+}
+
+.team1 td {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 13pt;
+}
+
+.TeamTable b {
+  font-size: 13pt;
+}
+
+.TeamTable button {
+  background-color: black;
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* ********************************************************* */
+
+.ReButton button {
+  background-color: #503396;
+  border: 1px solid #503396;
+  border-radius: 3px;
+  color: white;
+  outline: none;
+  width: 70px;
+  height: 30px;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.ReButton .disbtn {
+  background-color: #6c757d;
+  border: 1px solid #6c757d;
+  cursor: not-allowed;
+  border-radius: 3px;
+  color: white;
+  outline: none;
+  width: 70px;
+  height: 30px;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.txt1 {
+  font-size: 30pt;
+  color: #503396;
+}
+
+.txt2 {
+  font-size: 15pt;
+}
+
+.txt3 {
+  font-size: 15pt;
+}
+
+.txt4 {
+  font-size: 15pt;
+}
+
+.txt5 {
+  font-size: 25pt;
+  color: #503396;
+}
+
+.txt6 {
+  font-size: 15pt;
+}
+
+.txt7 {
+  font-size: 15pt;
+  margin-left: 10px;
+}
+
+.txt8 {
+  font-size: 12pt;
+  margin-left: 10px;
+}
+
+/* ********************************************************* */
+
+.Carousel {
+  clip-path: inset(35% 0 5% 0);
+  margin-top: -220px;
+}
+
+.Carousel button {
+  margin-top: 170px;
+}
+
+/* ********************************************************* */
+/* .Match1{
+    position: absolute;
+    top : 300px;
+    width: 800px;
+    height: 500px;
+    background-color: white;
+} */
+
+.scroll {
+  position: relative;
+  left: 280px;
+}
+
+.GujangTableDiv {
+  margin: 0, auto;
+  position: relative;
+}
+
+.MatchList {
+  width: 1000px;
+}
+
+.GujangList {
+  flex: 1;
+  flex-direction: column;
+}
+
+.picker {
+  text-align: center;
+  margin: 0, auto;
+}
+
+.MatchList button {
+  background-color: #503396;
+  border: 1px solid #503396;
+  border-radius: 3px;
+  color: white;
+  outline: none;
+  width: 70px;
+  height: 30px;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+/* ********************************************************* */
+
+.MatchDiv {
+  margin: 0, auto;
+  display: flex;
+}
+
+.Match1 .MatchButton {
+  border-color: #503396;
+  background-color: white;
+  border-radius: 10%;
+}
+
+.Match1 .MatchButton:hover {
+  background-color: #503396;
+  border-color: #503396;
+  outline: none;
+}
+
+/* .Match1 .MatchButton {
+    border: none;
+} */
+
+.User {
+  width: 300px;
+}
+
+.Users {
+  width: 350px;
+}
+
+/* ********************************************************* */
+
+.Menu5 a {
+  color: white;
+  text-decoration: none;
+}
+
+.Menu5 a.hover {
+  color: #503396;
+}
+
+div.slider {
+  height: 100px;
+}
+
+.slide.current {
+  height: 100px;
+}
+
+.Banner a.nextButton {
+  position: absolute;
+  top: 40%;
+  color: white;
+}
+
+.Banner a.previousButton {
+  position: absolute;
+  top: 40%;
+  color: white;
+}
+
+.Banner {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  color: white;
+  background-color: #503396;
+
+  slider: "slider";
+  previousbutton: "previousButton";
+  nextbutton: "nextButton";
+  buttondisabled: "enabled";
+  track: "track";
+  slide: "slide";
+  hidden: "hidden";
+  previous: "previous";
+  current: "current";
+  next: "next";
+  animatein: "animateIn";
+  animateout: "animateOut";
+}
+
+.track {
+  position: absolute;
+  width: 100%;
+  height: 90px;
+  margin-top: 15px;
+  /* border: 5px solid red; */
+}
+
+.logo2 {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  width: 120px;
+  background-color: black;
+}
+
+.Menu5 {
+  width: 100%;
+  height: 200px;
+  background-color: black;
+}
+
+.Menu1 li {
+  position: relative;
+  top: 130px;
+  left: 180px;
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  width: 8%;
+  font-size: 18pt;
+  color: white;
+  background-color: black;
+  font-family: NanumBarunGothic;
+  /* border: 1px solid gray; */
+}
+
+.Menu2 li {
+  position: relative;
+  top: 80px;
+  right: 100px;
+  width: 8%;
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  float: right;
+  /* width: 8%; */
+  font-size: 18pt;
+  color: white;
+  font-family: NanumBarunGothic;
+  background-color: black;
+  /* border: 1px solid gray; */
+}
+
+.Main {
+  position: absolute;
+  top: 190px;
+  width: 100%;
+  height: 500px;
+}
+
+/* video{
+    position: absolute;
+    top:10px;
+    width: 100%;
+    overflow: hidden;
+    clip-path: inset(20% 0 20% 0);
+    background-color: black;
+} */
+
+/* video.videoTag{
+    position: absolute;
+    top: -100px;
+    width: 1720px;
+    height: 500px;
+    overflow: hidden;
+    clip-path: inset(20% 0 20% 0);
+} */
+
+video {
+  position: absolute;
+  top: -205px;
+  width: 100%;
+  overflow: hidden;
+  clip-path: inset(20% 0 15% 0);
+}
+
+.Footer {
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+  height: 55px;
+  text-align: center;
+  font-family: NanumBarunGothic;
+  color: lightslategray;
+  background-color: black;
+  font-size: 13pt;
+}
+
+.Footer1 {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  height: 55px;
+  text-align: center;
+  font-family: NanumBarunGothic;
+  color: lightslategray;
+  background-color: black;
+}

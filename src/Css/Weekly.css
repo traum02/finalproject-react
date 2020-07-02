@@ -1,0 +1,30 @@
+.weekly.selected {
+  background-color: rgba(80, 51, 150, 0.9);
+}
+.weekly.disabled {
+  display: inline-block;
+  border: 2px solid rgb(80, 51, 150);
+  width: 80px;
+  height: 80px;
+  line-height: 25px;
+  text-align: center;
+  font-weight: bolder;
+  border-radius: 100px;
+  margin: 10px;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.1;
+}
+.weekly {
+  display: inline-block;
+  border: 2px solid rgb(80, 51, 150);
+  width: 80px;
+  height: 80px;
+  line-height: 25px;
+  text-align: center;
+  font-weight: bolder;
+  border-radius: 100px;
+  margin: 10px;
+  outline: none;
+  cursor: pointer;
+}

@@ -1,0 +1,84 @@
+.write{
+ font-family: NanumBarunGothic;
+ margin-top: 10px;
+ margin-left: 10px;
+}
+
+.question{
+    font-size: 50pt;
+    margin-left: 30pt;
+}
+
+.qnaimg{
+    width: 100px;
+    margin-left: 310pt;
+}
+
+.table.table-bordered{
+    margin-left: 25px;
+    width: 700px;
+    
+}
+
+.explain{
+    position: relative;
+    padding: 0 0 0 8px;
+    font-size: 10pt;
+    color:dimgray;
+}
+
+.Type{
+    background-color: rgb(214,214,214);
+    width: 300px;
+
+}
+.selectop{
+    width:120pt
+}
+
+.writer{
+    background-color: rgb(214,214,214);
+}
+
+.Subject{
+    background-color: rgb(214,214,214);
+}
+
+.subjectip{
+    width:500px;
+}
+
+.Content{
+    background-color: rgb(214,214,214);
+}
+
+.secure{
+    background-color: rgb(214,214,214);
+}
+.text{
+    height: 291px;
+    width: 500px;
+}
+
+.btn.btn-dark{
+    background-color: #503396;
+    border-color: #ffffff;
+    color: white;
+    width: 70pt;
+    height: 20pt;
+    font-size: 9pt;
+    margin-left: 20px;
+    
+}
+
+.button{
+    margin-left:250px;
+}
+
+.key{
+    width:20px;
+}
+
+.secureip{
+    width: 200px;
+}

@@ -1,0 +1,27 @@
+.btn.btn-dark{
+    background-color: #503396; 
+    width:400px;
+    height:35px;
+    border-color:#ffffff;
+    color:white;
+    
+ }
+.finalbtn{
+    position: absolute;
+    top:800px;
+    left:540px;
+}
+ .JoinFinal{
+    font-family: NanumBarunGothic; 
+    text-align: center;
+    font-size:14pt;
+ }
+
+ .img {
+     margin-top: 20px;
+     height: 200px;
+     margin-bottom: 30px;
+ }
+
+
+ 

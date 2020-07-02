@@ -1,0 +1,97 @@
+.eye{
+    width:33px;
+}
+
+.form_T{
+    font-family: NanumBarunGothic;
+    margin-top:10px;
+    width:100%;
+    text-align:center;
+}
+
+.head_T{
+    background-color:#000000;
+    color:white;
+}
+  
+.tbody_T{
+    height:30px;
+    font-size:11pt;
+}   
+
+
+.no_T{
+    
+    width:5%;
+    font-size: 13pt;
+}
+
+.type_T{
+    width:15%;
+    font-size: 13pt;
+}
+
+.title_T{
+    width:45%;
+    font-size: 13pt;
+}
+
+.date_T{
+    width:20%;
+    font-size: 13pt;
+}
+
+.member_T{
+    width:10%;
+    font-size: 13pt;
+}
+
+.count.T{
+    width:5%;
+}
+
+.body_T{
+    height:10px;
+}
+
+.wbtn_T{
+    margin-right:-92.6%;
+    margin-bottom:1%;
+    background: none;
+    border:none;
+    outline: none;
+}
+
+.pen{
+    width:65px;
+}
+
+.boardT_search{
+    margin-left: 26%;
+}
+
+.icon{
+    background:"#00ff0000";
+    border:none;
+    width:37px;
+    
+}
+
+.btnsearch{
+    border:none;
+}
+
+.search{
+    border:none;
+    background-color: white;
+}
+
+.select_T{
+    height:19.5px;
+    margin-right:3px;
+}
+
+.pagination{
+    margin-left:36.5%;
+}
+

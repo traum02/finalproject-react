@@ -1,0 +1,33 @@
+.sc{
+    font-family: NanumBarunGothic;
+}
+
+
+
+.scform{
+    border:1px solid gray;
+    width:500px;
+    height:300px;
+    margin-left: 32%;
+    text-align: center;
+}
+
+.scTitle{
+
+    color:#503396;
+    font-size: 80px;
+    margin-left: 40%;
+}
+
+.key{
+    width:35px;
+}
+
+.scbtn{
+    border:none;
+    background-color: #503396;
+    color:white;
+    width:70px;
+    height:25px;
+    border-radius: 4px;
+}

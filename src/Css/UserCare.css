@@ -1,0 +1,33 @@
+.h_id{
+    width:80px;
+}
+
+.table.table-bordered{
+    width:70%;
+    font-family: NanumBarunGothic;
+    font-size:8pt;
+    text-align: center;
+    margin-top:20px;
+    margin-left:20px;
+}
+
+.all_h{
+    background-color: rgba(80,51,150,0.4);
+}
+
+.adimg{
+    margin-left:380px;
+    width:200px;
+}
+.h_ex{
+    width:90px;
+}
+
+.out_member_btn{
+    border:none;
+    background-color: #503396;
+    color: white;
+    border-radius: 3px;
+    width:50px;
+    height:20px;
+}

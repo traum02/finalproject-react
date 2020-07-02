@@ -1,0 +1,22 @@
+.timeTable {
+  display: inline-block;
+  border: 1px solid gray;
+  width: 70px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 5px;
+  margin: 1px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+.enable {
+  background-color: lightgray;
+}
+.timeTable.able {
+  background-color: #503396;
+}
+
+.timeTable.able.selected {
+  background-color: rgba(80, 51, 150, 0.5);
+}

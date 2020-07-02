@@ -1,0 +1,51 @@
+.TWR{
+    font-family: NanmBarunGothic;
+    margin-top: 50px;
+    /* margin-top: 10px;
+    margin-left: 10px; */
+}
+
+.twtable{
+    width:50%;
+    text-align:left;
+    font-size:9pt;
+}
+
+.typing{
+    width:150px;
+    /* margin-left:19.2%; */
+}
+
+.twtext{
+    width:99%;
+    height:250px;
+    font-size: 13pt;
+}
+
+.twsel{
+    width:35%
+}
+
+.twnick{
+    width:50%;
+    font-size: 13pt;
+}
+
+.twtitle{
+    width:90%;
+}
+
+.twsvbtn{
+    border:none;
+    background:none;
+    background-color: #503396;
+    color:white;
+    width:120px;
+    height:40px;
+    border-radius: 3px;
+    font-size: 13pt;
+}
+
+/* .twsavebtn{
+    margin-left: 14.5%;
+} */
